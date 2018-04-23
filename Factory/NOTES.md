@@ -3,7 +3,7 @@
 # Factory
 ### The Factory method lets a class defer instantiation it uses to subclasses.
 - ## Why
-  - The Factory Method design pattern solves problems like: [2]
+  - The Factory Method design pattern solves problems like:
 
     - How can an object be created so that subclasses can redefine which class to instantiate?
     - How can a class defer instantiation to subclasses?
