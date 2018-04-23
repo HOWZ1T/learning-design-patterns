@@ -9,6 +9,7 @@
 - ### Creational Patterns
   - #### [Abstract Factory](Abstract_Factory/NOTES.md)
   - #### [Builder](Builder/NOTES.md)
+  - #### [Factory](Factory/NOTES.md)
 
 ## Patterns
 - ### Creational Patterns
