@@ -27,7 +27,7 @@ def print_module_variable(variable):
         print("altzone: {}".format(variable))
 
 
-@inject('timerss')
+@inject('time')
 class InjectedClass:
     def __init__(self, module):
         self.module = module

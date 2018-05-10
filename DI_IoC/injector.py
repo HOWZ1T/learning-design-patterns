@@ -55,7 +55,7 @@ def inject(module=None, attrib=None):
                 if attrib is not None:
                     mod = getattr(mod, attrib)
             except ImportError as e:
-                print("[ inject ] could not inject module: {} with attribute: {} as:\n{}".format(module, attrib, e))
+                raise ImportError("[ inject ] could not inject module: {} with attribute: {} , as:\n{}".format(module, attrib, e))
 
             res = func(mod, *args, **kwargs)
             return res
