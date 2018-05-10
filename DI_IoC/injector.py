@@ -42,6 +42,12 @@ def inject(module=None, attrib=None):
         >>>    def __init__(self, module):
         >>>        self.module = module
         >>>        print("Injected Class at: {}".format(self.module.time()))
+
+        >>>@inject('time')
+        >>>@inject('urllib')
+        >>>def multiple_injections(urllib, time):
+        >>>    print(urllib)
+        >>>    print(time)
     '''
 
     if module is None:

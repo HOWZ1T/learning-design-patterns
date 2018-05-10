@@ -34,8 +34,16 @@ class InjectedClass:
         print("Injected Class at: {}".format(self.module.time()))
 
 
+@inject('time')
+@inject('urllib')
+def multiple_injections(urllib, time):
+    print(urllib)
+    print(time)
+
+
 test_module_import()
 sleep()
 print_module_variable()
 
 injected_class = InjectedClass()
+multiple_injections()
