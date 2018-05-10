@@ -41,6 +41,8 @@
   - #### Strategy
   - #### Template method
   - #### Visitor
+- ### Other Patterns
+  - #### Dependency Injection (DI) / Inversion of Control (IoC)
 
 ## Resources / References
 - ### [Design patterns](https://sourcemaking.com/design_patterns)
