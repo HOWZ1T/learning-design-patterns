@@ -3,7 +3,7 @@ from DI_IoC.exceptions import InjectionKeyError
 
 def inject(module=None, attrib=None):
     '''
-    inject: provides module injection at the function scope via function decoration.
+    inject: provides module injection via object / function decoration.
 
     :param (string) module:
     :param (string) attrib:
