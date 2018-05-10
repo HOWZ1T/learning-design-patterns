@@ -6,7 +6,7 @@ def test_module_import(module):
     if module is None:
         print("could not import check console for error :(")
     else:
-        print("print module {} successfully imported".format(module))
+        print("print module {} successfully imported".format(module.__name__))
 
 
 @inject('time', 'sleep')
@@ -27,6 +27,15 @@ def print_module_variable(variable):
         print("altzone: {}".format(variable))
 
 
+@inject('time')
+class InjectedClass:
+    def __init__(self, module):
+        self.module = module
+        print("Injected Class at: {}".format(self.module.time()))
+
+
 test_module_import()
 sleep()
 print_module_variable()
+
+injected_class = InjectedClass()

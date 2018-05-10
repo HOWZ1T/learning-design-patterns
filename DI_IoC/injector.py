@@ -35,6 +35,13 @@ def inject(module=None, attrib=None):
         >>>        print("could not import variable! check console for error :(")
         >>>    else:
         >>>        print("altzone: {}".format(variable))
+
+
+        >>>@inject('time')
+        >>>class InjectedClass:
+        >>>    def __init__(self, module):
+        >>>        self.module = module
+        >>>        print("Injected Class at: {}".format(self.module.time()))
     '''
 
     if module is None:
