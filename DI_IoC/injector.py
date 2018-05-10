@@ -49,6 +49,7 @@ def inject(module=None, attrib=None):
 
     def wrapper(func):
         def inner_wrapper(*args, **kwargs):
+            mod = None
             try:
                 mod = __import__(module)
                 if attrib is not None:
